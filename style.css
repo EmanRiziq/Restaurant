@@ -1,4 +1,9 @@
 body {background-color: #E0DECA;}
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
 
 ul {
     list-style-type: none;
@@ -56,3 +61,59 @@ ul {
   input[type=submit]:hover {
     background-color: #C7D36F;
   }
+  
+
+
+
+  #myresturant {
+    width: 70%;
+    border-collapse: collapse;
+    display: table;
+    margin: auto;
+    padding: 3em;
+    height: 320px;
+    border-radius: 20px;
+    border-left: 1px solid $white;
+    border-top: 1px solid $white;
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;    
+    
+}
+#myresturant tr:nth-child(even){background-color: #E0DECA;}
+#myresturant tr:hover {background-color: #E0DECA;}
+
+#tHead {
+  font-size: x-large;
+    text-align: center;
+    background-color: #9EB23B;
+    height: 60px;
+    margin: auto;
+    width: 70%;
+}
+#rowid{
+  text-align: center;
+    background-color: #FCF9C6;
+    height: 60px;
+    width: 222px;
+    margin: auto;
+}
+
+tr:hover {background-color: #ddd;}
+
+form {
+  /* background: $white; */
+  padding: 3em;
+  height: 320px;
+  border-radius: 20px;
+  border-left: 1px solid $white;
+  border-top: 1px solid $white;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
