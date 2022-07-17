@@ -5,54 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicone.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="shortcut icon" href="#">
+
+    <title>Resturant Statistics</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicone.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
     <head>
-        <table >
+        <table>
             <tr>
                 <td><img src="./assets/favicone.png" alt="Logo"></td>
                 <td style="font-size:45px ; color:#9EB23B ;font-weight:bold;"> Event Resturant</td>
             </tr>
         </table>
-
-
         <ul>
             <li><a class="active" href="./index.html">Home</a></li>
             <li><a class="active" href="./statistics.html"> Statistics</a></li>
-
         </ul>
         </br>
 
     </head>
-    <main id="mainid">
+    <main>
+        <table id="myresturant">
+            <tr  id="tHead" >
+                
+                <td>ID</td>
+                <td>Food Name</td>
+                <td>Food Type</td>
+                <td>Price</td>
+                
+            </tr>
+        </table>
 
-        <form id="formID">
-            <label for="FoodName"> Food Name </label>
-            <input type="text" name="FoodName" id="FoodName" /></br>
 
-            <label for="FoodType">Choose Food type:</label>
-            <select name="FoodType" id="FoodType">
-                <option value="Fruitvegetables">Fruit and vegetables</option>
-                <option value="Starchy">Starchy food</option>
-                <option value="Dairy">Dairy</option>
-                <option value="Protein">Protein</option>
-                <option value="Fat">Fat</option>
-            </select></br>
 
-            <label for="Price"> Price </label>
-            <input type="text" name="Price" id="Price" /></br>
 
-            <input type="submit" value="submit" />
-
-        </form>
     </main>
     <footer>
         <table>
@@ -64,11 +54,8 @@
                 <td style="color:#9EB23B ;"> <i class="uil uil-copyright"></i> all rights reserved</td>
             </tr>
         </table>
-
-
     </footer>
-    <!-- <script src="./apps.js"></script> -->
-    <script src="apps.js"></script>
-</body>
+    <script src="./statistics.js"></script>
+    </bo`dy>
 
 </html>
