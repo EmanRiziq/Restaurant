@@ -30,10 +30,11 @@
     <main id="mainid">
         <form id="formID">
             <label for="FoodName"> Food Name </label>
-            <input type="text" name="FoodName" id="FoodName" /></br>
+            <input type="text" name="FoodName" id="FoodName"  placeholder="Enter Food Name"/></br>
 
             <label for="FoodType">Choose Food type:</label>
-            <select name="FoodType" id="FoodType">
+            <select name="FoodType" id="FoodType"  >
+                <option value="" disabled selected hidden>Choose Food Type...</option>
                 <option value="Fruitvegetables">Fruit and vegetables</option>
                 <option value="Starchy">Starchy food</option>
                 <option value="Dairy">Dairy</option>
@@ -42,7 +43,7 @@
             </select></br>
 
             <label for="Price"> Price </label>
-            <input type="text" name="Price" id="Price" /></br>
+            <input type="text" name="Price" id="Price" placeholder="Enter the Price "/></br>
 
             <input type="submit" value="submit" />
         </form>

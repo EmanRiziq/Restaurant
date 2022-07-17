@@ -28,8 +28,6 @@ function RenderMenu() {
         // Creating and adding data to second row of the table
         let Row2 = document.createElement('tr');
         Row2.id="rowid";
-        console.log(Row2.id);
-        console.log(Row2);
 
         let Data1 = document.createElement('td');
         Data1.innerHTML = AllFoodArr[i].ID;
