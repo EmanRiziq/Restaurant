@@ -3,8 +3,6 @@ let AllFoodArr = RetriveLocal();
 PrintMenu();
 function RenderMenu() {
     let Table = document.getElementById("myresturant");
-
-
     // let Table=document.createElement('table');
     // Table.classname=("myresturant");
 
@@ -33,7 +31,6 @@ function RenderMenu() {
         console.log(Row2.id);
         console.log(Row2);
 
-
         let Data1 = document.createElement('td');
         Data1.innerHTML = AllFoodArr[i].ID;
         let Data2 = document.createElement('td');
@@ -55,11 +52,9 @@ function RetriveLocal() {
     var getJson = localStorage.getItem('Foods')
     if (getJson != null)
         return JSON.parse(getJson);
-
 }
 function PrintMenu() {
     for (let i = 0; i < AllFoodArr.length; i++) {
         RenderMenu(AllFoodArr[i]);
-
     }
 }

@@ -4,7 +4,6 @@ main {
     justify-content: space-evenly;
     padding: 50px;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -62,9 +61,6 @@ ul {
     background-color: #C7D36F;
   }
   
-
-
-
   #myresturant {
     width: 70%;
     border-collapse: collapse;

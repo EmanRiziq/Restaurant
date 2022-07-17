@@ -1,22 +1,18 @@
 "use strict";
 const AllFood = [];
-
 function FoodConstructer(FoodName, Type, Price) {
     this.FoodName = FoodName;
     this.Type = Type;
     this.Price = Price;
     this.ID= this.CreatID();
     AllFood.push(this);
-
 }
 FoodConstructer.prototype.CreatID = function () {
     const ID = Math.floor(1000 + Math.random() * 9000);
     return ID;
 }
 
-
 const formEl = document.getElementById("formID");
-
 formEl.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
@@ -26,10 +22,7 @@ function handleSubmit(event) {
     let Price = event.target.Price.value;
     let newfood = new FoodConstructer(FoodName, Type, Price);
     saveData(); 
-    // RenderMenu();
-    
 }
-
 function saveData() {
     // what do I need to store?
     let strifyedData = JSON.stringify(AllFood);
