@@ -79,7 +79,9 @@ ul {
     
 }
 #myresturant tr:nth-child(even){background-color: #E0DECA;}
-#myresturant tr:hover {background-color: #E0DECA;}
+#myresturant tr:hover {background-color: #9EB23B;
+color: #E0DECA;}
+
 
 #tHead {
   font-size: x-large;
@@ -98,7 +100,7 @@ ul {
     margin: auto;
 }
 
-tr:hover {background-color: #ddd;}
+
 
 form {
   /* background: $white; */
