@@ -21,6 +21,7 @@ function handleSubmit(event) {
     let Type = event.target.FoodType.value;
     let Price = event.target.Price.value;
     let newfood = new FoodConstructer(FoodName, Type, Price);
+    formEl.reset();  
     saveData(); 
 }
 function saveData() {
