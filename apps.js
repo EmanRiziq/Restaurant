@@ -1,5 +1,6 @@
 "use strict";
 const AllFood = [];
+// main constructor
 function FoodConstructer(FoodName, Type, Price) {
     this.FoodName = FoodName;
     this.Type = Type;
@@ -7,11 +8,12 @@ function FoodConstructer(FoodName, Type, Price) {
     this.ID= this.CreatID();
     AllFood.push(this);
 }
+//creat random 4d ID
 FoodConstructer.prototype.CreatID = function () {
     const ID = Math.floor(1000 + Math.random() * 9000);
     return ID;
 }
-
+//handling submit
 const formEl = document.getElementById("formID");
 formEl.addEventListener('submit', handleSubmit);
 
@@ -24,9 +26,10 @@ function handleSubmit(event) {
     formEl.reset();  
     saveData(); 
 }
+
+//Save to LS
 function saveData() {
-    // what do I need to store?
     let strifyedData = JSON.stringify(AllFood);
     localStorage.setItem("Foods", strifyedData);
-    // console.log('Local Storage Updated')
+    console.log(strifyedData);
 }
