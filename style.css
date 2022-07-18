@@ -4,6 +4,12 @@ main {
     justify-content: space-evenly;
     padding: 50px;
 }
+div {
+  display: block;
+  /* padding: 1in; */
+  /* padding-top: 1in; ; */
+}
+/* navbsr */
 ul {
     list-style-type: none;
     margin: 0;
@@ -28,39 +34,8 @@ ul {
     background-color: #9EB23B;
   }
 
-  input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #9EB23B;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=text]:focus {
-    border: 3px solid #9EB23B;  }
-    select {
-  width: 100%;
-  padding: 12px 20px;
-  border:  1px solid #9EB23B;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
   
-  input[type=submit] {
-    width: 100%;
-    background-color:#9EB23B;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #C7D36F;
-  }
-  
+  /* table */
   #myresturant {
     width: 70%;
     border-collapse: collapse;
@@ -81,8 +56,6 @@ ul {
 #myresturant tr:nth-child(even){background-color: #E0DECA;}
 #myresturant tr:hover {background-color: #9EB23B;
 color: #E0DECA;}
-
-
 #tHead {
   font-size: x-large;
     text-align: center;
@@ -100,8 +73,7 @@ color: #E0DECA;}
     margin: auto;
 }
 
-
-
+/* form */
 form {
   /* background: $white; */
   padding: 3em;
@@ -116,3 +88,35 @@ form {
   transition: all 0.2s ease-in-out;
 }
 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #9EB23B;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  border: 3px solid #9EB23B;  }
+  select {
+width: 100%;
+padding: 12px 20px;
+border:  1px solid #9EB23B;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:#9EB23B;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #C7D36F;
+}

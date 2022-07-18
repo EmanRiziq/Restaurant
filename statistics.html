@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
     <title>Resturant Statistics</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicone.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-
     <head>
         <table>
-            <tr>
+            <tr style=" height: 125px; "></tr>
                 <td><img src="./assets/favicone.png" alt="Logo"></td>
                 <td style="font-size:45px ; color:#9EB23B ;font-weight:bold;"> Event Resturant</td>
             </tr>
         </table>
+        <!-- navbar -->
         <ul>
             <li><a class="active" href="./index.html">Home</a></li>
             <li><a class="active" href="./statistics.html"> Statistics</a></li>
@@ -28,6 +28,7 @@
         </br>
     </head>
     <main>
+        <!-- table header -->
         <table id="myresturant">
             <tr  id="tHead" >
                 <td>ID</td>
@@ -36,6 +37,18 @@
                 <td>Price</td>
             </tr>
         </table>
+
+        <br> <!--  try to make a new line  but not working-->
+        <!-- bar chart -->
+        <div>
+          <canvas id="myChart1"></canvas>
+          </div>
+          <!-- pie chart  -->
+          <hr> <!--  try to make a new line  but not working-->
+        <p></p> <!--  try to make a new line  but not working-->
+           <div>
+            <canvas id="myChart2"></canvas>
+          </div>
     </main>
     <footer>
         <table>
